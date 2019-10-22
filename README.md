@@ -1,5 +1,7 @@
 # safestudio-playground
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/SafeStudio/safestudio-playground.svg)](https://greenkeeper.io/)
+
 > SAFE Studio Playground
 
 ## Build Setup

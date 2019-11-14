@@ -4,7 +4,7 @@
       <div class="col-12 mx-auto">
         <div class="jumbotron text-center">
           <h1 class="display-4">SAFE Studio Playground</h1>
-          <bootstrap-dropdown title="Select tool" :items="items" class="text-center" />
+          <bootstrap-dropdown-link title="Select tool" :items="items" class="text-center" />
         </div>
       </div>
     </div>
@@ -12,18 +12,20 @@
 </template>
 
 <script>
-import BootstrapDropdown from '~/components/dropdown/BootstrapDropdown.vue'
-
 export default {
   components: {
-    BootstrapDropdown
+    BootstrapDropdownLink: () => import('~/components/dropdown/BootstrapDropdownLink.vue')
   },
   data() {
     return {
       items: [
         {
-          label: "Generate Netlify redirect config",
+          label: 'Generate Netlify redirect config',
           link: '/generate-netlify-redirect-config'
+        },
+        {
+          label: 'Cipher tools',
+          link: '/cipher'
         }
       ]
     }

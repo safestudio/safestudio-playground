@@ -25,6 +25,7 @@ module.exports = {
   ],
   plugins: [
     "~/plugins/vue-clipboard.js",
+    { src: '~/plugins/webFontLoader.js', ssr: false },
   ],
   /*
   ** Build configuration
